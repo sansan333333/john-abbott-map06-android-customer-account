@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".DetailActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="family" />
+
+        <RadioButton
+            android:id="@+id/radio_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="balance" />
+
+        <RadioButton
+            android:id="@+id/radio_open_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open date" />
+
+        <RadioButton
+            android:id="@+id/radio_acc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acc number" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/show_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radio_group"
+        android:text="details" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="goBack"
+        android:text="BACK" />
+</RelativeLayout>
